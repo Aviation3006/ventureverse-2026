@@ -65,8 +65,8 @@ h2 em, h1 em { color: var(--orange); font-style: normal; }
 .hero { position: relative; min-height: max(680px, calc(100svh - 80px)); display: flex; align-items: center; overflow: hidden; }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(280px, .8fr); gap: clamp(32px, 6vw, 96px); align-items: end; padding-block: clamp(72px, 10vw, 144px); }
 .hero-copy { min-width: 0; }
-.hero h1 { max-width: 100%; margin-bottom: var(--space-4); font-size: clamp(64px, 8.5vw, 146px); font-weight: 600; letter-spacing: -.09em; overflow-wrap: break-word; }
-.hero h1 em { display: inline-block; margin-left: .06em; font: 600 clamp(44px, 7vw, 104px)/1 var(--mono); letter-spacing: -.12em; color: transparent; -webkit-text-stroke: 1px var(--orange); vertical-align: .16em; }
+.hero h1 { max-width: 100%; margin-bottom: var(--space-4); font-size: clamp(48px, 7.3vw, 120px); font-weight: 600; letter-spacing: -.09em; white-space: nowrap; }
+.hero h1 em { display: inline-block; margin-left: .06em; font: 600 clamp(34px, 4.6vw, 76px)/1 var(--mono); letter-spacing: -.12em; color: transparent; -webkit-text-stroke: 1px var(--orange); vertical-align: .16em; }
 .hero-tagline { max-width: 460px; margin-bottom: var(--space-6); font-size: clamp(20px, 2.1vw, 28px); line-height: 1.2; }
 .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: var(--space-3); }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 16px; min-height: 52px; padding: 14px 20px; border: 1px solid transparent; text-decoration: none; font: 600 11px var(--mono); text-transform: uppercase; letter-spacing: .06em; cursor: pointer; transition: transform .2s ease, background .2s ease, color .2s ease; }
@@ -186,7 +186,7 @@ h2 em, h1 em { color: var(--orange); font-style: normal; }
 @media (max-width: 460px) {
   .container { width: calc(100% - 32px); }
   .section { padding-block: 72px; }
-  .hero h1 { font-size: clamp(62px, 19vw, 90px); }
+  .hero h1 { font-size: clamp(62px, 19vw, 90px); white-space: normal; }
   .hero h1 em { display: block; margin: 14px 0 0; font-size: 44px; }
   .hero-tagline { font-size: 21px; }
   .hero-actions { align-items: stretch; flex-direction: column; }
