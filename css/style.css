@@ -107,11 +107,9 @@ h2 em, h1 em { color: var(--orange); font-style: normal; }
 .section-heading-light .eyebrow { color: var(--cyan); }
 .schedule-section { background: var(--navy); }
 .schedule-list { border-top: 1px solid var(--line-light); }
-.schedule-row { position: relative; display: grid; grid-template-columns: 180px 1fr; align-items: center; gap: 20px; min-height: 96px; border-bottom: 1px solid var(--line-light); transition: padding .2s ease, background .2s ease; }
+.schedule-row { position: relative; display: flex; align-items: center; min-height: 96px; border-bottom: 1px solid var(--line-light); transition: padding .2s ease, background .2s ease; }
 .schedule-row:hover, .schedule-row:focus-within { padding-inline: 14px; background: rgba(244,240,230,.06); }
-.schedule-row time { font: 600 clamp(15px, 1.6vw, 20px) var(--mono); color: var(--cyan); }
 .schedule-row h3 { margin: 0; font-size: clamp(26px, 3.4vw, 48px); letter-spacing: -.04em; }
-.schedule-end { margin-left: 14px; color: rgba(244,240,230,.55); font: 500 10px var(--mono); text-transform: uppercase; }
 
 /* Guests */
 .fictional-banner { display: inline-block; margin: -20px 0 54px; padding: 9px 12px; background: var(--ink); color: var(--paper); font: 500 10px var(--mono); text-transform: uppercase; letter-spacing: .06em; }
@@ -173,8 +171,7 @@ h2 em, h1 em { color: var(--orange); font-style: normal; }
   .hero-side-copy { max-width: 430px; }
   .info-strip { margin-top: var(--space-5); }
   .about-layout { gap: var(--space-7); }
-  .schedule-row { grid-template-columns: 105px 1fr; gap: 10px; min-height: 86px; }
-  .schedule-end { display: block; margin: 5px 0 0; }
+  .schedule-row { min-height: 86px; }
   .guest-grid { grid-template-columns: 1fr 1fr; gap: var(--space-4); }
   .guest-one { grid-column: span 2; }
   .guest-two, .guest-three { margin-top: 28px; }
@@ -193,7 +190,7 @@ h2 em, h1 em { color: var(--orange); font-style: normal; }
   .hero-actions { align-items: stretch; flex-direction: column; }
   .hero-actions .button { width: 100%; }
   .highlight { grid-template-columns: 42px 1fr; gap: 12px; }
-  .schedule-row { grid-template-columns: 1fr; gap: 6px; padding-block: 22px; }
+  .schedule-row { padding-block: 22px; }
   .schedule-row h3 { font-size: 27px; }
   .guest-grid { grid-template-columns: 1fr; }
   .guest-one, .guest-three { grid-column: auto; }
